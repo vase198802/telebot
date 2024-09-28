@@ -1,6 +1,6 @@
 import telebot
 bot = telebot.TeleBot(TOKEN)
-
+dsgwergs
 
 @bot.message_handler(commands=['start'])
 def start(message):
