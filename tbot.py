@@ -1,10 +1,7 @@
 # Подключаем модуль случайных чисел
 import random
-
 # Подключаем модуль для Телеграма
 import telebot
-from six import importer
-
 # Указываем токен
 bot = telebot.TeleBot('7865327651:AAGVWWZKhOutjFnBc_XR-19s6p1LCAPOjfs')
 # Импортируем типы из модуля, чтобы создавать кнопки
