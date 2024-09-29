@@ -6,7 +6,7 @@ import telebot
 from six import importer
 
 # Указываем токен
-bot = telebot.TeleBot('7767659338:AAGUsR1yWgJjG64RPz21o_QPWSseKPxHX1M')
+bot = telebot.TeleBot('7865327651:AAGVWWZKhOutjFnBc_XR-19s6p1LCAPOjfs')
 # Импортируем типы из модуля, чтобы создавать кнопки
 from telebot import types
 # Заготовки для трёх предложений
