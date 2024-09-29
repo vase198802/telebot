@@ -194,6 +194,8 @@ try:
         else:
             pass
 
-    bot.polling(none_stop=True)
+
+    bot.polling(none_stop=True, interval=0)
+
 except Exception:
     pass
