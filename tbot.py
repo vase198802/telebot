@@ -59,7 +59,7 @@ try:
     def query_handler(call):
         if call.data == 'oven':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/aries/today.html').text
+                'https://horo.mail.ru/prediction/aries/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -70,7 +70,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'telec':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/taurus/today.html').text
+                'https://horo.mail.ru/prediction/taurus/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -81,7 +81,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'bliznec':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/gemini/today.html').text
+                'https://horo.mail.ru/prediction/gemini/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -92,7 +92,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'rak':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/cancer/today.html').text
+                'https://horo.mail.ru/prediction/cancer/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -103,7 +103,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'lev':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/lion/today.html').text
+                'https://horo.mail.ru/prediction/leo/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -114,7 +114,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'deva':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/virgo/today.html').text
+                'https://horo.mail.ru/prediction/virgo/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -125,7 +125,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'vesy':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/libra/today.html').text
+                'https://horo.mail.ru/prediction/libra/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -136,7 +136,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'scorpion':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/scorpio/today.html').text
+                'https://horo.mail.ru/prediction/scorpio/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -147,7 +147,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'strelec':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/sagittarius/today.html').text
+                'https://horo.mail.ru/prediction/sagittarius/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -158,7 +158,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'kozerog':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/capricorn/today.html').text
+                'https://horo.mail.ru/prediction/capricorn/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -169,7 +169,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'aqua':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/aquarius/today.html').text
+                'https://horo.mail.ru/prediction/aquarius/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
@@ -180,7 +180,7 @@ try:
                 call.message.chat.id, 'Ваш гороскоп на ' + b[2] + '.' + b[1] + ':\n ' + info[0])
         elif call.data == 'fish':
             res = requests.get(
-                'https://orakul.com/horoscope/astrologic/general/pisces/today.html').text
+                'https://horo.mail.ru/prediction/pisces/today/').text
             soup = BeautifulSoup(res, features="html.parser")
             soup.encode('utf-8')
             cases = soup.find("div", {"class": "horoBlock"}).get_text().strip()
