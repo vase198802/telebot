@@ -1,11 +1,9 @@
-# -*- coding: utf8 -*-
-
 import telebot
 import requests
 from bs4 import BeautifulSoup
 import datetime
 
-# t.me/TrueGoroscope_bot
+
 
 try:
     bot = telebot.TeleBot('8039836946:AAHyyI4156WFz1Oe97H5chQnAB6it43GEso')
@@ -55,7 +53,7 @@ try:
         if message.text:
             bot.send_message(message.chat.id,
                              'Ссылка на бота: '
-                             't.me/TrueGoroscope_bot')
+                             'https://t.me/horoscop198802bot')
 
     @bot.callback_query_handler(func=lambda call: True)
     def query_handler(call):
