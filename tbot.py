@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import datetime
 
 
+
 try:
     bot = telebot.TeleBot('8039836946:AAHyyI4156WFz1Oe97H5chQnAB6it43GEso')
 
@@ -52,7 +53,7 @@ try:
         if message.text:
             bot.send_message(message.chat.id,
                              'Ссылка на бота: '
-                             't.me/TrueGoroscope_bot')
+                             '@horoscop198802bot')
 
     @bot.callback_query_handler(func=lambda call: True)
     def query_handler(call):
